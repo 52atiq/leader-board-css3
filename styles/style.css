@@ -23,6 +23,45 @@ body{
     background-color: #E5E5E5;
 }
 
+/* Header  */
+nav{
+    margin-bottom: 80px;
+}
+nav> ul{
+    display: flex;
+
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+     
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav  li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px; 
+}
+nav li:hover{
+    background-color: yellow;
+}
+/* nav > ul > li:hover > ul{
+    display: block;
+} */
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightyellow;
+    padding: 0;
+}
+.dropdown li{
+    margin: 23px 50px;
+    padding:20px;
+}
+
+
 /* top players style  */
 .top-players{
     margin-bottom: 30px;
