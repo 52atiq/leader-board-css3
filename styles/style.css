@@ -107,9 +107,40 @@ body{
 
 }
 
+/* Koures  */
+
+ .kourses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.kourses-info{
+    display: flex;
+    justify-content: space-between;
+}
+.chobi img{
+    width: 250px;
+    height: 140px;
+}
+.time{
+    margin-left: 10px;
+}
+.time-icon{
+    margin-right: 10px;
+     background-color: rgba(148, 106, 106, 0.664);
+     color: black;
+}
+.time-icon:hover{
+    background-color: rgb(224, 21, 55);
+    color: white;
+}
+
+
+
+
+
 /* media queries  */
 /* Mobile Device */
-@media only screen and (max-width:688px) {
+ @media only screen and (max-width:688px) {
     .container{
         width: 100%;
     }
@@ -126,7 +157,7 @@ body{
 }
 
 /* tablet device */
-@media only screen and (min-width:688px) and (max-width:992px) {
+ @media only screen and (min-width:688px) and (max-width:992px) {
     .container{
         width: 100%;
     }
@@ -138,4 +169,40 @@ body{
       
    }
     
+} 
+/* Koures  */
+@media  only screen  and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .kourses{
+        grid-template-columns: repeat(1,1fr);
+        background-color: rgba(221, 89, 37, 0.781);
+       
+    }
+    .kourse{
+         margin-top: 30px;
+        margin-left: 50px;
+      
+    }
+    
+}
+ /* tablet */
+@media only screen and (min-width:689px) and (max-width:992px) 
+{
+.kourses{
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba(26, 151, 82, 0.39);
+  
+} 
+.kourse{
+ 
+  background-color: green;
+  border: 2px solid red;
+  margin:20px 30px 40px 40px;
+  color: #FFFFFF;
+}   
+.chobi img{
+    width: 100%;
+}
 }
